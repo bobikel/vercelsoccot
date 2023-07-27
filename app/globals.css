@@ -1,0 +1,270 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --gradient: linear-gradient(90deg, #066A52 0,#005EAA 51%,#267871);
+
+ 
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+ 
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+ 
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+ 
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+ 
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+ 
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+ 
+    --ring: 215 20.2% 65.1%;
+ 
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+ 
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+ 
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+ 
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+ 
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+ 
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+ 
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+ 
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+ 
+    --ring: 217.2 32.6% 17.5%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+.content-inner-2{
+  background-image: url("/assets/images/background/bg2.png");
+  padding-top: 40px;
+  padding-bottom: 0;
+}
+.sub-title_section {
+  @apply text-[#066A52]   rounded-full ;
+  padding: 10px 30px;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background-color: rgb(0 94 170 / 10%);
+}
+.gradient_style {
+
+  background-image: var(--gradient);
+  background-size: 200%
+
+}
+.text-gradient {
+            background: linear-gradient(to right, #066A52,
+                    #0B448D, #E71115, #F7DD00);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+ }
+ .text-gradient1 {
+            background: linear-gradient(to right, #E71115,
+                     #F7DD00);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+ }
+ .text-gradient2 {
+            background: linear-gradient(to right, #0B448D,
+            #E71115);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+ }
+ header{
+  background-image: url("/assets/images/media/blue-brushstrokes-background.jpg");
+  background-size: cover;
+ }
+ .icon-bx-wraper.style-3 {
+    box-shadow: 0 0 10px 4px rgba(31,66,135,.1);
+    padding: 30px;
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: all .5s;
+    overflow: hidden;
+    z-index: 9;
+}
+.icon-bx-wraper.style-3.active .wraper-effect, .icon-bx-wraper.style-3:hover .wraper-effect {
+    right: -150px;
+    bottom: -150px;
+}
+.icon-bx-wraper.style-3 .wraper-effect {
+    border-radius: 50%;
+    position: absolute;
+    transition: all .5s;
+    height: 350px;
+    width: 350px;
+    background-color: hsla(0,0%,100%,.2);
+    right: -100%;
+    bottom: -100%;
+    z-index: -1;
+}
+.dlab-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.2;
+}
+.icon-bx-wraper.style-3.active, .icon-bx-wraper.style-3 {
+    background-image: var(--gradient);
+    background-size: 200%;
+}.icon-bx-wraper.style-3 .wraper-effect {
+  border-radius: 50%;
+  position: absolute;
+  transition: all .5s;
+  height: 350px;
+  width: 350px;
+  background-color: hsla(0,0%,100%,.2);
+  right: -100%;
+  bottom: -100%;
+  z-index: -1
+}
+
+.icon-bx-wraper.style-3 .wraper-effect:after,.icon-bx-wraper.style-3 .wraper-effect:before {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  transition: all .5s;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%
+}
+
+.icon-bx-wraper.style-3 .wraper-effect:before {
+  background-color: hsla(0,0%,100%,.2);
+  height: 250px;
+  width: 250px
+}
+
+.icon-bx-wraper.style-3 .wraper-effect:after {
+  background-color: #005EAA;
+  height: 150px;
+  width: 150px
+}
+.icon-bx-wraper.style-3.active .wraper-effect,.icon-bx-wraper.style-3:hover .wraper-effect {
+  right: -150px;
+  bottom: -150px
+}
+.afterImage{
+  background-image: url("/assets/images/media/bg7.263dd148ef050cd0d81a0c5506384a76.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+ 
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  z-index: 5
+}
+
+.dz-media {
+  mask-size: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65vw;
+  mask-image: url("/assets/images/media/pic2.7dbb6ddf9303bd9a68bea197698dcbda.png");
+}
+
+footer .footer-title {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  margin: 0 0 30px;
+  position: relative;
+  color: #fff;
+  line-height: 1.2;
+  opacity:1 !important;
+}
+
+footer .footer-title:after,footer .footer-title:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  border-radius: 20px;
+  background-color: #fff
+}
+
+footer .footer-title:before {
+  width: 15px
+}
+
+footer .footer-title:after {
+  width: 45px;
+  left: 20px
+}
+
+.site-footer.style-2 {
+  background-position: 50%;
+  position: relative;
+  height: auto!important;
+  background-color: #0e1b1f
+}
+.flex-center {
+  @apply flex justify-center items-center;
+}
+footer .widget_getintuch .icon {
+    height: 40px;
+    width: 40px;
+    min-width: 40px;
+    line-height: 40px;
+    margin-right: 10px;
+    text-align: center;
+    background-image: var(--gradient);
+    background-size: 200%;
+    border-radius: 50px;
+}
+.site-footer.style-2 .footer-bottom {
+  background-color: #1f343b;
+  padding: 10px 0
+}

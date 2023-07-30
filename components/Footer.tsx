@@ -50,7 +50,7 @@ const Footer = () => {
         <div className=" px-6 lg:px-16 md:px-10 ">
           <div className="flex justify-center items-center">
             <div className="text-white"><span className=" text-sm ">Copyright © 2023 <Link
-              className='font-bold' href="https://dexignzone.com/" target="_blank">SCCOTC</Link>. All rights
+              className='font-bold' href="https://soccot.com/" target="_blank">SOCCOT</Link>. All rights
               reserved.</span></div>
 
             <div className="dlab-social-icon">

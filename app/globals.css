@@ -268,3 +268,21 @@ footer .widget_getintuch .icon {
   background-color: #1f343b;
   padding: 10px 0
 }
+.dlab-team:hover .overlay-content {
+  transition: all .5s;
+  opacity: 1
+}
+.overlay-content {
+  position: absolute;
+  background-color: rgba(6, 106, 82,.4);
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all .5s
+}

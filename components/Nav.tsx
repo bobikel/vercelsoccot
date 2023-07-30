@@ -1,9 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useEffect, useState } from "react";
-import { Button } from "./ui/button";
+
 const Nav = () => {
 
   const [active, setActive] = useState(false);
@@ -45,9 +44,15 @@ const Nav = () => {
 
       {/* Desktop Navigation */}
       <div className=" justify-between items-center md:flex hidden text-white ">
+
         <ul className="nav  navbar  flex text-[15px] font-[400px] uppercase">
           <li className="px-[15px] py-[35] " ><Link href="/">Acceuil</Link></li>
-          <li className="px-[15px] py-[35] "><Link href="/#about" >À propos</Link>
+          <li className="px-[15px] py-[35] group  relative">
+            <Link href="/#about" >Presentation</Link>
+            <div className=" group-hover:flex group-hover:flex-col  hidden absolute top-5 left-0  uppercase bg-white text-[#066A52] w-[250px] p-2 rounded-sm ">
+              <Link  className=" hover:bg-[#066A52] hover:text-white p-2" href="/#about" >Menbres de commité</Link>
+              <Link className="hover:bg-[#066A52] hover:text-white p-2" href="/#about" >Status de soccot </Link>
+            </div>
 
           </li>
           <li className="px-[15px] py-[35] "><Link href="/#calender">Calendrier</Link>

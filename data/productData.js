@@ -6,8 +6,8 @@ export const ProductData = [
         price: '1 099€',
         title: 'SAMSUNG 75CU8005 - TV 4K UHD HDR - 189 cm',
         category:'disqueDur',
-        imageSrc: '/assets/images/vente/vente1.jpeg',
-        detail: 'Smart TV, Téléviseur LED, 75" (189 cm), résolution 3840 x 2160, Bixby.',
+        imageSrc: '/assets/images/galerie/bahebeck.jpg',
+        detail: 'Pr Jean BAHEBECK',
 
     }, {
         id: '2',
